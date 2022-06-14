@@ -44,26 +44,31 @@ body {
 
 
 #top {
+    width: 225px;
+    height: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
     text-align: center;
-    font: 15px Arial, sans-serif;
-    font-weight: 200;
+    font: 25px georgia, sans-serif;
+    font-weight: 500;
     border: 5px solid black;
     border-radius: 15px;
-    margin-right: 20px;
+    margin-right: 8px;
 }
 
 #bottom {
+    width: 225px;
+    height: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
     text-align: center;
-    font: 15px Arial, sans-serif;
-    font-weight: 200;
+    font: 24px georgia, sans-serif;
+    font-weight: 500;
     border: 5px solid black;
     border-radius: 15px;
-    margin-left: 20px;
+    margin-left: 10px;
 }
+
 
 
 #result_button {
@@ -95,13 +100,68 @@ body {
     padding: 0;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 510px) {
     #top {
-        width: 40%;
+        width: 28%;
         height: 20px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        text-align: center;
+        font: 23px georgia, sans-serif;
+        font-weight: bolder;
+        border: 3.5px solid black;
+        border-radius: 15px;
+        margin-right: 7px;
     }
     #bottom {
-        width: 40%;
+        width: 28%;
         height: 20px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        text-align: center;
+        font: 23px georgia, sans-serif;
+        font-weight: bolder;
+        border: 3.5px solid black;
+        border-radius: 15px;
+        margin-left: 7px;
+    }
+
+    #Gen_result {
+        margin-top: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 10px;
+        border: 3.5px solid black;
+        background-color: green;
+        color:white;
+        text-align:center;
+    }
+}
+
+@media screen and (max-width: 600) and (min-width: 510px) {
+    #top {
+        width: 28%;
+        height: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        text-align: center;
+        font: 25px georgia, sans-serif;
+        font-weight: 700;
+        border: 5px solid black;
+        border-radius: 15px;
+        margin-right: 9px;
+    }
+    
+    #bottom {
+        width: 28%;
+        height: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        text-align: center;
+        font: 25px georgia, sans-serif;
+        font-weight: 700;
+        border: 5px solid black;
+        border-radius: 15px;
+        margin-left: 10px;
     }
 }
