@@ -49,7 +49,7 @@ body {
     padding-top: 20px;
     padding-bottom: 20px;
     text-align: center;
-    font: 25px georgia, sans-serif;
+    font: 18px georgia, sans-serif;
     font-weight: 500;
     border: 5px solid black;
     border-radius: 15px;
@@ -62,7 +62,7 @@ body {
     padding-top: 20px;
     padding-bottom: 20px;
     text-align: center;
-    font: 24px georgia, sans-serif;
+    font: 18px georgia, sans-serif;
     font-weight: 500;
     border: 5px solid black;
     border-radius: 15px;
@@ -107,8 +107,8 @@ body {
         padding-top: 15px;
         padding-bottom: 15px;
         text-align: center;
-        font: 23px georgia, sans-serif;
-        font-weight: bolder;
+        font: 15px georgia, sans-serif;
+        font-weight: 400;
         border: 3.5px solid black;
         border-radius: 15px;
         margin-right: 7px;
@@ -119,7 +119,7 @@ body {
         padding-top: 15px;
         padding-bottom: 15px;
         text-align: center;
-        font: 23px georgia, sans-serif;
+        font: 15px georgia, sans-serif;
         font-weight: bolder;
         border: 3.5px solid black;
         border-radius: 15px;
@@ -145,8 +145,8 @@ body {
         padding-top: 20px;
         padding-bottom: 20px;
         text-align: center;
-        font: 25px georgia, sans-serif;
-        font-weight: 700;
+        font: 15px georgia, sans-serif;
+        font-weight: 400;
         border: 5px solid black;
         border-radius: 15px;
         margin-right: 9px;
@@ -158,8 +158,8 @@ body {
         padding-top: 20px;
         padding-bottom: 20px;
         text-align: center;
-        font: 25px georgia, sans-serif;
-        font-weight: 700;
+        font: 15px georgia, sans-serif;
+        font-weight: 400;
         border: 5px solid black;
         border-radius: 15px;
         margin-left: 10px;
