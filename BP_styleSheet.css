@@ -1,11 +1,15 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,800,300);
 
 body {
-    background-image: url('BP9.jpg');     
+    background-image: url('BP9.jpg');
+    background-position: center;
+    height: 100vh;
+    width: 100vw;     
     background-size: cover;
-    opacity: 70%;
+    opacity: 75%;
     background-repeat: no-repeat;
     color: white;
+    font: 20px georgia, sans-serif;
 }
 
 #title {
@@ -16,6 +20,7 @@ body {
 #intro {
     text-align: center;
     color: white;
+    font: 15px georgia, sans-serif;
     padding:0px;
     margin-bottom: 0px;
 }
@@ -30,8 +35,8 @@ body {
 
 #decribe_input h4{
     display:inline-block;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin-top: 3px;
+    margin-bottom: 3px;
     margin-right: 30px;
     margin-left: 40px;
     padding: 0px; 
