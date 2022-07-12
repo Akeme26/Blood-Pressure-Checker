@@ -10,7 +10,7 @@ def root():
     return render_template('BPTest_Homepage.html')
 
 
-@app.route('/result', method = ['POST'])
+@app.route('/result', methods = ['POST'])
 def result():
     pass
 
