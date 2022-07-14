@@ -5,78 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blood Pressure Analysis</title>
-    <link rel="stylesheet" href="/static/BP_styleSheet.css">
+    <link rel="stylesheet" href="/static/BP_stylesheet.css">
 </head>
 
 
 <body>
     <div id="title">
-        <b><h1>Blood Pressure Checker</h1></b>
-    </div>
+        <b><h1>Blood Pressure Analysis</h1></b>
+    </div><br><br><br><br><br>
     
-    <div>
-        <div id="intro"><br><br><br>
-            <h2>Enter Your result values below</h2><br>
-        </div>
-        <form onsubmit="details(); return false;">
+    <form  action="{{url_for('result')}}" method="POST" onsubmit="BP(); return false;">
+        <div>
+            <div id="user_info">
+                <label id="label"> Name:<b>*</b><input id="Name" autofocus type="text" name="Name" equired></label><br>
+                <label id="label">Email:<b>*</b><input id="email" type="email" name="Email"  equired></label>
+            </div>
+            
+            <div id="intro"><br><br>
+                <h2>Enter Your result values below</h2>
+            </div>
+
             <div id="input">
-                <input autocomplete="off" autofocus id="top" type="number" placeholder="SYSTOLIC mmHG">
-                <input autocomplete="off" id="bottom" type="number" placeholder="DIASTOLIC mmHG"><br>
+                <input autocomplete="off" autofocus id="top" type="number" name="topValue" placeholder="SYSTOLIC mmHG" equired>
+                <input autocomplete="off" id="bottom" type="number" name="bottomValue" placeholder="DIASTOLIC mmHG" equired><br>
             </div>
+
             <div id="result_button">
-                <button type="submit" value="Generate Result" id ="Gen_result">Gen Result</button>
+                <button type="submit" value="Generate Result" id ="Gen_result" >Generate Result</button>
             </div>
-        </form>
-        <p id="updatemessage"></p>
-        <div id="result"><br><br><br>
-            <h2 id="result1"> Your result will Show here</h2>
+
+            <p id="updatemessage"></p>
+            <div id="result"><br><br><br>
+                <h2 id="result1"> Your result will Show here</h2>
+            </div>
         </div>
-    </div>
-    <!--
-    <section>
-        <p ><h2 style="color:black; text-align: center;" >User Guide</h2></p>
-        <table style="width: 100%">
-            <tr>
-                <th>BLOOD PRESSURE</th>
-                <th>SYSTOLIC mmHG <br>(top number)</th>
-                <th></th>
-                <th>DIASTOLIC mmHG <br> (bottom number)</th>
-            </tr>
-                <th style="background-color:lightgreen; color: white"> Normal</th>
-                <th style="background-color:lightgrey"> <120 </th>
-                <th style="background-color:lightgrey">AND</th>
-                <th style="background-color:lightgrey"> <80 </th>
-            <tr>
-                <th style="background-color: orange; color: white">Elevated</th>
-                <th>120-129</th>
-                <th>AND</th>
-                <th><80</th>
-            </tr>
-            
-            <tr>
-                <th style="background-color:darkorange; color: white">High blood Pressure<br> (Stage 1 hypertension)</th>
-                <th style="background-color:lightgrey">130-139</th>
-                <th style="background-color:lightgrey">OR</th>
-                <th style="background-color:lightgrey">80-89</th>
-            </tr>
-
-            <tr>
-                <th style="background-color:red; color:white">High blood Pressure<br> (Stage 2 hypertension)</th>
-                <th>>140</th>
-                <th>OR</th>
-                <th>>90</th>
-            </tr>
-
-            <tr>
-                <th style="background-color:darkred; color: white">Hypertensive Crisis<br> (Seek medical attention)</th>
-                <th style="background-color:lightgrey">>180</th>
-                <th style="background-color:lightgrey">AND/OR</th>
-                <th style="background-color:lightgrey">>120</th>
-            </tr>
-            
-        </table>
-    </section>
-    -->
+    </form>
     <script src="/static/BP_Test.js"></script>
 </body>
 </html>

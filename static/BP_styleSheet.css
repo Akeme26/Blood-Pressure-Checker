@@ -1,28 +1,28 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,800,300);
 
 body {
-    background-image: url('BP9.jpg');
+    background-image: url('bp 6.jpg');
     background-position: center;
     height: 100vh;
-    width: 100vw;     
+    width: 100vw;
     background-size: cover;
     opacity: 75%;
     background-repeat: no-repeat;
-    color: white;
+    color: black;
     font: 20px georgia, sans-serif;
 }
 
 #title {
-    background-image: url('bp11.jpg'); 
+    background-image: url('bp\ 6.jpg'); 
     text-align: center;
 }
 
 #intro {
     text-align: center;
-    color: white;
     font: 15px georgia, sans-serif;
     padding:0px;
     margin-bottom: 0px;
+    margin: auto;
 }
 
 #decribe_input {
@@ -35,18 +35,52 @@ body {
 
 #decribe_input h4{
     display:inline-block;
-    margin-top: 3px;
-    margin-bottom: 3px;
+    margin-top: 2px;
+    margin-bottom: 2px;
     margin-right: 30px;
     margin-left: 40px;
     padding: 0px; 
     border: 0px;
 }
 
-#input {
+#input, #user_info {
     text-align: center;
 }
 
+#label{
+    margin-right: 5px;
+}
+
+#Name {
+    display: inline-flex;
+    text-align: left;
+    width: 225px;
+    height: 7px;
+    padding-top: 6px;
+    padding-left: 3px;
+    padding-bottom: 6px;
+    font: 18px georgia, sans-serif;
+    font-weight: 500;
+    border: 5px solid black;
+    border-radius: 5px;
+    margin-top: 8px;
+}
+
+#email {
+    display: inline-flex;
+    text-align: center;
+    width: 225px;
+    height: 7px;
+    padding-top: 6px;
+    padding-left: 3px;
+    padding-bottom: 6px;
+    text-align: left;
+    font: 18px georgia, sans-serif;
+    font-weight: 500;
+    border: 5px solid black;
+    border-radius: 5px;
+    margin-top: 8px;
+}
 
 #top {
     width: 225px;
@@ -73,7 +107,6 @@ body {
     border-radius: 15px;
     margin-left: 10px;
 }
-
 
 
 #result_button {
@@ -106,8 +139,9 @@ body {
 }
 
 @media screen and (max-width: 510px) {
+    
     #title {
-        background-image: url('BP9.jpg'); 
+        background-image: url('bp 6.jpg'); 
         text-align: center;
         font: 13px georgia, sans-serif;
     }
@@ -119,7 +153,7 @@ body {
         padding:0px;
         margin-bottom: 0px;
     }
-    
+
     #top {
         width: 28%;
         height: 20px;
@@ -156,7 +190,7 @@ body {
         color:white;
         text-align:center;
     }
-    
+
     #result1 {
         background-color: lightgreen;
         text-align: center;
@@ -164,6 +198,7 @@ body {
         font: 20px georgia, sans-serif;
         font-weight: 550;
     }    
+
 }
 
 @media screen and (max-width: 600) and (min-width: 510px) {
