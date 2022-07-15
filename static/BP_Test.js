@@ -59,6 +59,8 @@ function BP() {
 
 
 //Result Highlighter Function
-let Glow = () => {
-    const border = document.getElementById('result1').style.border = 'yellow';
+function Glow() {
+    setTimeout(
+        document.getElementById('result1').style.color = 'yellow', 1000
+    )
 }
