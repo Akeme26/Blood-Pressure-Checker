@@ -127,9 +127,11 @@ body {
 }
 
 #result1 {
-    background-color: lightgreen;
+    background-color: red;
     text-align: center;
     color: black;
+    border: solid black;
+    border-radius: 5px;
 }
 
 .image {
@@ -192,7 +194,7 @@ body {
     }
 
     #result1 {
-        background-color: lightgreen;
+        background-color: red;
         text-align: center;
         color: black;
         font: 20px georgia, sans-serif;
